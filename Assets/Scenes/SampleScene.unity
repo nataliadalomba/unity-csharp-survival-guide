@@ -412,3 +412,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff5699e48e9458459736e4a11a49f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  items:
+  - iD: 0
+    name: NULL
+    description: NULL
+  - iD: 1
+    name: Sword
+    description: This is a magical sword.
+  - iD: 2
+    name: Bread
+    description: I can eat this.
+  - iD: 3
+    name: Cape
+    description: A wonderful-looking cape.
+  - iD: 4
+    name: Spear
+    description: It has a sharp point!
