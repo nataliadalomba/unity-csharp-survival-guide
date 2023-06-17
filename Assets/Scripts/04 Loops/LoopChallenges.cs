@@ -11,22 +11,22 @@ public class LoopChallenges : MonoBehaviour {
 
         HowFastYoureGoing();
         
-        void UltimatePrintOuts() {
-            //total numbers from 0-30
-            //print out 0-10 and then prints out only even numbers to 20
-            //then print out only odd numbers to 30. use modulus
+        //void UltimatePrintOuts() {
+        //    //total numbers from 0-30
+        //    //print out 0-10 and then prints out only even numbers to 20
+        //    //then print out only odd numbers to 30. use modulus
 
-            for (int i = 0; i <= 30; i++) {
-                if (i <= 10)
-                    Debug.Log(i);
+        //    for (int i = 0; i <= 30; i++) {
+        //        if (i <= 10)
+        //            Debug.Log(i);
 
-                else if (i >= 11 && i <= 20 && i % 2 == 0)
-                    Debug.Log(i);
+        //        else if (i >= 11 && i <= 20 && i % 2 == 0)
+        //            Debug.Log(i);
 
-                else if (i >= 20 && i <= 30 && i % 2 == 1)
-                    Debug.Log(i);
-            }
-        }
+        //        else if (i >= 20 && i <= 30 && i % 2 == 1)
+        //            Debug.Log(i);
+        //    }
+        //}
 
         void HowFastYoureGoing() {
             maxSpeed = Random.Range(60, 120);
