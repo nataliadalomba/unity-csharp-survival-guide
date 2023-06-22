@@ -6,18 +6,24 @@ public class PositionMatters: MonoBehaviour {
     //use another method to set the position to that sub index
     //at start, random position is picked. have script attached to player
 
+    //make PositionMatters better by generating 5 random positions in code
+    //then write article on it
+
     [SerializeField] private Vector3[] positions = new Vector3[5];
 
     private void Start() {
+        for (int i = 0; i < positions.Length; i++)
+            positions[i] = new Vector3(Random.Range(-14, 15), 0, 
+                Random.Range(-14, 15));
         SetPosition();
     }
 
-    private int GetRandomIndex(Vector3[] array) {
-        int index = Random.Range(0, array.Length);
+    private int GetRandomIndex() {
+        int index = Random.Range(0, positions.Length);
         return index;
     }
 
     private void SetPosition() {
-        transform.position = positions[GetRandomIndex(positions)];
+        transform.position = positions[GetRandomIndex()];
     }
 }
