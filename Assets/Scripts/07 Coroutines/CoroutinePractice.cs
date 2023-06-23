@@ -3,17 +3,14 @@ using UnityEngine;
 
 public class CoroutinePractice : MonoBehaviour {
 
-    private int cycles;
-
     private void Start() {
-        StartCoroutine(LevelUpFireworksRoutine());
+        StartCoroutine(ExampleCoroutine());
     }
 
-    IEnumerator LevelUpFireworksRoutine() {
-        while(cycles < 5) {
+    private IEnumerator ExampleCoroutine() {
+        for (int i = 0; i < 5; i++) {
+            Debug.Log("routine running");
             yield return new WaitForSeconds(2);
-            Debug.Log("Play fireworks animation");
-            cycles++;
         }
     }
 }

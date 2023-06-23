@@ -8,10 +8,10 @@ public class ParametersAndReturnTypes : MonoBehaviour {
     //this is an excellent example to write the struct article
     //because it shows you can't edit the struct ... property directly
     [SerializeField] private GameObject sphere;
-    private Renderer renderer;
+    private Renderer render;
 
     private void Start() {
-        renderer = sphere.GetComponent<Renderer>();
+        render = sphere.GetComponent<Renderer>();
     }
 
     private void Update() {
@@ -20,9 +20,9 @@ public class ParametersAndReturnTypes : MonoBehaviour {
     }
 
     public void DecreaseObjectAlpha(float incrementor) {
-        Color c = renderer.material.color;
+        Color c = render.material.color;
         c.a -= incrementor;
-        renderer.material.color = c;
+        render.material.color = c;
     }
 
     //public void Damage(int damageAmount) {
