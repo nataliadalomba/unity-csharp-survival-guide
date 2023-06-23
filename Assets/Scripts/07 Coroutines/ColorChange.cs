@@ -14,8 +14,7 @@ public class ColorChange : MonoBehaviour {
 
     private IEnumerator ColorChangeCoroutine() {
         while (true) {
-            Color c = renderer.material.color;
-            c = new Color(Random.value, Random.value, Random.value);
+            Color c = new Color(Random.value, Random.value, Random.value);
             renderer.material.color = c;
             yield return new WaitForSeconds(3);
         }

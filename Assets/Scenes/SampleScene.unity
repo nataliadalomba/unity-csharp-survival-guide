@@ -410,8 +410,8 @@ GameObject:
   - component: {fileID: 2013785730}
   - component: {fileID: 2013785729}
   - component: {fileID: 2013785728}
-  - component: {fileID: 2013785731}
   - component: {fileID: 2013785727}
+  - component: {fileID: 2013785731}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -506,6 +506,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 2013785726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52e2ab3a879d1a7449cd28abf1bcb7a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 097b11667fb774e49b6ab1c38192eadb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldCoin:
+    name: 
+    itemID: 0
+    icon: {fileID: 0}
+  sword:
+    name: 
+    itemID: 0
+    icon: {fileID: 0}
+    attackBonus: 0
+    prayerBonus: 0
+    strengthBonus: 0
+    magicBonus: 0
+  bread:
+    name: 
+    itemID: 0
+    icon: {fileID: 0}
+    addedHealth: 0
+    poisoned: 0
